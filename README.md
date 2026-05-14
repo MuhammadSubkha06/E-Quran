@@ -42,7 +42,12 @@ Integrasi waktu sholat untuk menjaga kedisiplinan ibadah.
 3. **Pantau Jadwal:** Cek halaman utama untuk melihat jadwal sholat harian dan waktu tunggu menuju waktu sholat berikutnya.
 4. **Kustomisasi:** Gunakan mode malam jika diperlukan untuk pengalaman membaca yang lebih baik.
 
+
+## API From :
+
+**https://equran.id/apidev/v2
+
 ---
 
-**Dibuat oleh:** [Nama Anda/Tim]  
+**Dibuat oleh:** Muhammad Subkha
 *Menyebarkan kebaikan melalui teknologi informasi.*
