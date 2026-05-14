@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Jadwal Adzan"
+            android:textSize="28sp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pilih lokasi untuk melihat jadwal hari ini"
+            android:textColor="#757575"
+            android:layout_marginBottom="24dp"/>
+
+        <Spinner
+            android:id="@+id/spinnerProvinsi"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="10dp" />
+
+        <Spinner
+            android:id="@+id/spinnerKabupaten"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="16dp"
+            android:background="@android:drawable/btn_dropdown"
+            android:padding="10dp" />
+
+        <Button
+            android:id="@+id/cariJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="24dp"
+            android:text="Cari Jadwal"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:cornerRadius="12dp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardJadwal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:visibility="gone"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="4dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+
+                <TextView
+                    android:id="@+id/tvTanggal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="20dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginBottom="20dp">
+
+                    <include android:id="@+id/layoutSubuh" layout="@layout/item_jadwal_shalat" />
+                    <include android:id="@+id/layoutDzuhur" layout="@layout/item_jadwal_shalat" />
+                    <include android:id="@+id/layoutAshar" layout="@layout/item_jadwal_shalat" />
+                    <include android:id="@+id/layoutMaghrib" layout="@layout/item_jadwal_shalat" />
+                    <include android:id="@+id/layoutIsya" layout="@layout/item_jadwal_shalat" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

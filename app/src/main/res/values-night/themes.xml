@@ -1,0 +1,7 @@
+<resources>
+    <style name="Theme.EQuran40" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:statusBarColor">#000000</item>
+    </style>
+</resources>

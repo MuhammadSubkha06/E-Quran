@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp">
+
+    <TextView
+        android:id="@+id/tvNamaShalat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Shalat"
+        android:textSize="16sp"
+        android:textColor="#424242" />
+
+    <TextView
+        android:id="@+id/tvWaktuShalat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:text="00:00"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="@color/black" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tvNamaShalat"
+        android:layout_marginTop="12dp"
+        android:background="#EEEEEE" />
+</RelativeLayout>

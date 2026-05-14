@@ -1,0 +1,13 @@
+<resources>
+    <style name="Theme.EQuran40" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="android:statusBarColor">?attr/colorOnPrimary</item>
+    </style>
+
+    <style name="Theme.MyApp.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenBackground">@color/black</item>
+        <item name="windowSplashScreenAnimatedIcon">@drawable/logo</item>
+        <item name="postSplashScreenTheme">@style/Theme.EQuran40</item>
+    </style>
+</resources>
